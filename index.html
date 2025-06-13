@@ -33,6 +33,21 @@
             padding: 0;
             margin: 0;
         }
+
+#logo-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    padding: 0;
+    margin: 0;
+}
+
+#logo-img {
+    display: block;
+    height: 50px; /* Tu peux ajuster la taille selon ton besoin */
+}
+
         </style>
         <title>CI-ENERGIES Géoportail</title>
     </head>
@@ -2093,5 +2108,9 @@
         lay.addTo(map);
         setBounds();
         </script>
+<div id="logo-container">
+<img src="images/CI-ENERGIES.png" alt="Logo CI-ENERGIES" id="logo-img">
+</div>
+
     </body>
 </html>
